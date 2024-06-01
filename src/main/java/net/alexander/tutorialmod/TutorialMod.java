@@ -1,6 +1,7 @@
 package net.alexander.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.alexander.tutorialmod.block.ModBlocks;
 import net.alexander.tutorialmod.item.ModCreativeModTabs;
 import net.alexander.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -28,6 +29,7 @@ public class TutorialMod {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
