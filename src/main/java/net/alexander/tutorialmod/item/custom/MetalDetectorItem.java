@@ -33,6 +33,9 @@ public class MetalDetectorItem extends Item {
                     break;
                 }
             }
+            if(!foundBlock) {
+                player.sendSystemMessage(Component.literal("No valuables Found!"));
+            }
         }
         return InteractionResult.SUCCESS;
     }
