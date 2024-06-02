@@ -1,4 +1,9 @@
 package net.alexander.tutorialmod.item.custom;
 
-public class MetalDetectorItem {
+import net.minecraft.world.item.Item;
+
+public class MetalDetectorItem extends Item {
+    public MetalDetectorItem(Properties pProperties) {
+        super(pProperties);
+    }
 }
