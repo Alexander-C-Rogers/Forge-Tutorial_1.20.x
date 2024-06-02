@@ -37,6 +37,8 @@ public class MetalDetectorItem extends Item {
                 player.sendSystemMessage(Component.literal("No valuables Found!"));
             }
         }
+        pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(),
+                player -> player.broadcastBreakEvent(player.getUsedItemHand()));
         return InteractionResult.SUCCESS;
     }
 
