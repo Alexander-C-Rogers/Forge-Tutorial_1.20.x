@@ -12,5 +12,7 @@
   "block.tutorial_mod.nether_sapphire_ore": "Nether Sapphire Ore",
   "block.tutorial_mod.end_stone_sapphire_ore": "End Stone Sapphire Ore",
 
+  "block.tutorial_mod.sound_block": "Sound Block",
+
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }
