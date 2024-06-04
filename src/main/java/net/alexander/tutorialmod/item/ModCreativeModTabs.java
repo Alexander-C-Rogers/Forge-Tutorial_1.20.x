@@ -25,6 +25,9 @@ public class ModCreativeModTabs {
                         /*custom mod item*/
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
 
+                        /*mod food item*/
+                        pOutput.accept(ModItems.STRAWBERRY.get());
+
                         /*mod blocks*/
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
