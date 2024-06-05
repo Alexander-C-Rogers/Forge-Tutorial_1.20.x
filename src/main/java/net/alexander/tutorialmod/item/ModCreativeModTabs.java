@@ -18,27 +18,28 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.tutorial_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        /*mod items*/
+                        /*Mod Items*/
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
 
-                        /*custom mod item*/
+                        /*Custom Mod Items*/
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModItems.PINE_CONE.get());
 
-                        /*mod food item*/
+                        /*Mod Food Item*/
                         pOutput.accept(ModItems.STRAWBERRY.get());
 
-                        /*mod blocks*/
+                        /*Mod Blocks*/
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
 
-                        /*mod ores*/
+                        /*Mod Ores*/
                         pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
-                        /*custom mod block*/
+                        /*Custom Mod Block*/
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                     })
                     .build());
