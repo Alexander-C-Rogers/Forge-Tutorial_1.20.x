@@ -48,6 +48,7 @@ public class MetalDetectorItem extends Item {
         return InteractionResult.SUCCESS;
     }
 
+    /*add custom tooltip*/
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level
             pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
