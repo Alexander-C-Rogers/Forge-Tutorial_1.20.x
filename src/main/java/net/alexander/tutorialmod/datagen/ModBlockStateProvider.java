@@ -21,6 +21,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         /*mod ores*/
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
