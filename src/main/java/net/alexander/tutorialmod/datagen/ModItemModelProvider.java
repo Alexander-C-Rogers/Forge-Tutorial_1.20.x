@@ -1,6 +1,7 @@
 package net.alexander.tutorialmod.datagen;
 
 import net.alexander.tutorialmod.TutorialMod;
+import net.alexander.tutorialmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -16,7 +17,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-
+        /*Mod Items*/
+        simpleItem(ModItems.SAPPHIRE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
