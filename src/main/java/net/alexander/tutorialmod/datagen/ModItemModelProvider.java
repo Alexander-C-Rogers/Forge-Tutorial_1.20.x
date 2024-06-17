@@ -24,6 +24,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         /*Custom Mod Items*/
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.PINE_CONE);
+
+        /*Mod Food Item*/
+        simpleItem(ModItems.STRAWBERRY);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
