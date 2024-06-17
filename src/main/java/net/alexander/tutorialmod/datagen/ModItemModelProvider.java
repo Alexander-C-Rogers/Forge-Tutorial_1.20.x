@@ -19,6 +19,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         /*Mod Items*/
         simpleItem(ModItems.SAPPHIRE);
+        simpleItem(ModItems.RAW_SAPPHIRE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
