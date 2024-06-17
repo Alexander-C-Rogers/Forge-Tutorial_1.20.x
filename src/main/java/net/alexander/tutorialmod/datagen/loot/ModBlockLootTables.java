@@ -1,6 +1,7 @@
 package net.alexander.tutorialmod.datagen.loot;
 
 import net.alexander.tutorialmod.block.ModBlocks;
+import net.alexander.tutorialmod.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -28,6 +29,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         /*custom mod blocks*/
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
+
+        /*mod ores*/
+        this.add(ModBlocks.SAPPHIRE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBLock, Item item) {
