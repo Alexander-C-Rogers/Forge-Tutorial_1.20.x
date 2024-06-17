@@ -17,7 +17,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.Set;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
-    protected ModBlockLootTables() {
+    public ModBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
 
@@ -41,9 +41,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.END_STONE_SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
     }
 
-    protected LootTable.Builder createCopperLikeOreDrops(Block pBLock, Item item) {
-        return createSilkTouchDispatchTable(pBLock,
-                this.applyExplosionDecay(pBLock,
+    protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
                         LootItem.lootTableItem(item)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
