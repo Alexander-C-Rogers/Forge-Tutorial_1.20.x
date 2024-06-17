@@ -1,6 +1,7 @@
 package net.alexander.tutorialmod.datagen;
 
 import net.alexander.tutorialmod.TutorialMod;
+import net.alexander.tutorialmod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -14,7 +15,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-
+        /*mod blocks*/
+        blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
