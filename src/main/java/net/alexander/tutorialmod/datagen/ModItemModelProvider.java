@@ -31,8 +31,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         /*Mod Food Item*/
         simpleItem(ModItems.STRAWBERRY);
 
-        /*Mod Door*/
+        /*Mod Door and Trapdoor*/
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
+        trapdoorItem(ModBlocks.SAPPHIRE_TRAPDOOR);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
