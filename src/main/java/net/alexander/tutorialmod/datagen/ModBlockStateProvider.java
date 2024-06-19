@@ -43,6 +43,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceGateBlock(((FenceGateBlock) ModBlocks.SAPPHIRE_FENCE_GATE.get()),
                 blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
         wallBlock(((WallBlock) ModBlocks.SAPPHIRE_WALL.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
+
+        /*Mod Door*/
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.SAPPHIRE_DOOR.get()), modLoc("block/sapphire_door_bottom"),
+                modLoc("block/sapphire_door_top"), "cutout");
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
