@@ -37,6 +37,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         buttonBlock(((ButtonBlock) ModBlocks.SAPPHIRE_BUTTON.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.SAPPHIRE_PRESSURE_PLATE.get()),
                 blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
+        
+        /*Mod Fence*/
+        fenceBlock(((FenceBlock) ModBlocks.SAPPHIRE_FENCE.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
