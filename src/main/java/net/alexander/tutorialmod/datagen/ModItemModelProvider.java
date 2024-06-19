@@ -35,8 +35,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
         trapdoorItem(ModBlocks.SAPPHIRE_TRAPDOOR);
 
-        /*Mod Fence*/
+        /*Mod Fence, Fence Gate, and Wall*/
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);
+        buttonItem(ModBlocks.SAPPHIRE_BUTTON, ModBlocks.SAPPHIRE_BLOCK);
+        wallItem(ModBlocks.SAPPHIRE_WALL, ModBlocks.SAPPHIRE_BLOCK);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
