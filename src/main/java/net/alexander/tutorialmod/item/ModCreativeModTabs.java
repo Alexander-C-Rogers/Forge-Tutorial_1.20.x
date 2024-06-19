@@ -41,6 +41,12 @@ public class ModCreativeModTabs {
 
                         /*Custom Mod Block*/
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+
+                        /*Mod Stairs, Slab, Button, and Pressure Plate*/
+                        pOutput.accept(ModBlocks.SAPPHIRE_STAIRS.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_SLAB.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_BUTTON.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
                     })
                     .build());
 
