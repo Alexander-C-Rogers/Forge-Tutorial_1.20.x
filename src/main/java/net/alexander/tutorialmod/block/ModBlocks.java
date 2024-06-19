@@ -73,6 +73,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> SAPPHIRE_DOOR = registerBlock("sapphire_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)
                     .noOcclusion(), BlockSetType.IRON));
+    public static final RegistryObject<Block> SAPPHIRE_TRAPDOOR = registerBlock("sapphire_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
 
     /*Block registration helper methods.*/
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
