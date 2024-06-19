@@ -48,8 +48,9 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.SAPPHIRE_BUTTON.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
 
-                        /*Mod Fence*/
+                        /*Mod Fence, Fence Gate*/
                         pOutput.accept(ModBlocks.SAPPHIRE_FENCE.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_FENCE_GATE.get());
                     })
                     .build());
 
