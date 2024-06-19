@@ -53,8 +53,9 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.SAPPHIRE_FENCE_GATE.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_WALL.get());
 
-                        /*Mod Door*/
+                        /*Mod Door and Trapdoor*/
                         pOutput.accept(ModBlocks.SAPPHIRE_DOOR.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
                     })
                     .build());
 
