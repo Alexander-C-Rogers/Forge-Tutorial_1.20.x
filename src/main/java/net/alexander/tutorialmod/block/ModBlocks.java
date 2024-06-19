@@ -3,6 +3,7 @@ package net.alexander.tutorialmod.block;
 import net.alexander.tutorialmod.TutorialMod;
 import net.alexander.tutorialmod.block.custom.SoundBlock;
 import net.alexander.tutorialmod.item.ModItems;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -62,6 +63,9 @@ public class ModBlocks {
     /*Mod Fences, Fence Gates, and Walls*/
     public static final RegistryObject<Block> SAPPHIRE_FENCE = registerBlock("sapphire_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> SAPPHIRE_FENCE_GATE = registerBlock("sapphire_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST),
+                    SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
 
     /*Block registration helper methods.*/
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
