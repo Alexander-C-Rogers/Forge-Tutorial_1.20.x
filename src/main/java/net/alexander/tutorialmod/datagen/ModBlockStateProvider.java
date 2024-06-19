@@ -30,8 +30,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         /*custom mod block*/
         blockWithItem(ModBlocks.SOUND_BLOCK);
 
-        /*Mod Stairs*/
+        /*Mod Stairs and Slab*/
         stairsBlock(((StairBlock) ModBlocks.SAPPHIRE_STAIRS.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.SAPPHIRE_SLAB.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()),
+                blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
