@@ -47,6 +47,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> SAPPHIRE_STAIRS = registerBlock("sapphire_stairs",
             () -> new StairBlock(() -> ModBlocks.SAPPHIRE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> SAPPHIRE_SLB = registerBlock("sapphire_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
     /*Block registration helper methods.*/
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
