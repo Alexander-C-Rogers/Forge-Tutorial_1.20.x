@@ -1,6 +1,7 @@
 package net.alexander.tutorialmod.datagen;
 
 import net.alexander.tutorialmod.TutorialMod;
+import net.alexander.tutorialmod.block.ModBlocks;
 import net.alexander.tutorialmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -29,6 +30,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         /*Mod Food Item*/
         simpleItem(ModItems.STRAWBERRY);
+
+        /*Mod Door*/
+        simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
