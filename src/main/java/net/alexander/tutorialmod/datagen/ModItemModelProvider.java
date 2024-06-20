@@ -37,8 +37,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         /*Mod Fence, Fence Gate, and Wall*/
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);
-        buttonItem(ModBlocks.SAPPHIRE_BUTTON, ModBlocks.SAPPHIRE_BLOCK);
+        evenSimplerBlockItem(ModBlocks.SAPPHIRE_FENCE_GATE);
         wallItem(ModBlocks.SAPPHIRE_WALL, ModBlocks.SAPPHIRE_BLOCK);
+
+        /*Mod stairs, slab, button, and pressure plate*/
+        evenSimplerBlockItem(ModBlocks.SAPPHIRE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.SAPPHIRE_SLAB);
+        evenSimplerBlockItem(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
+        buttonItem(ModBlocks.SAPPHIRE_BUTTON, ModBlocks.SAPPHIRE_BLOCK);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
