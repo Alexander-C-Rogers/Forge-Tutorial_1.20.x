@@ -20,6 +20,9 @@
   "block.tutorial_mod.sapphire_slab": "Sapphire Slab",
   "block.tutorial_mod.sapphire_button": "Sapphire Button",
   "block.tutorial_mod.sapphire_pressure_plate": "Sapphire Pressure Plate",
+  "block.tutorial_mod.sapphire_fence": "Sapphire Fence",
+  "block.tutorial_mod.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.tutorial_mod.sapphire_wall": "Sapphire Wall",
 
   "tooltip.tutorial_mod.metal_detector.tooltip": "Finds valuables underground!",
 
