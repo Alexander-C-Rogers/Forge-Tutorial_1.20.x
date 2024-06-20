@@ -23,6 +23,8 @@
   "block.tutorial_mod.sapphire_fence": "Sapphire Fence",
   "block.tutorial_mod.sapphire_fence_gate": "Sapphire Fence Gate",
   "block.tutorial_mod.sapphire_wall": "Sapphire Wall",
+  "block.tutorial_mod.sapphire_door": "Sapphire Door",
+  "block.tutorial_mod.sapphire_trapdoor": "Sapphire Trapdoor",
 
   "tooltip.tutorial_mod.metal_detector.tooltip": "Finds valuables underground!",
 
