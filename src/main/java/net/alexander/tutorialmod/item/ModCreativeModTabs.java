@@ -29,6 +29,9 @@ public class ModCreativeModTabs {
                         /*Mod Food Item*/
                         pOutput.accept(ModItems.STRAWBERRY.get());
 
+                        /*Mod Custom 3D Model Item*/
+                        pOutput.accept(ModItems.SAPPHIRE_STAFF.get());
+
                         /*Mod Blocks*/
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
