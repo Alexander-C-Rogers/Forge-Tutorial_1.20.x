@@ -48,6 +48,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         /*Mod Custom Tools*/
         handheldItem(ModItems.SAPPHIRE_SWORD);
+        handheldItem(ModItems.SAPPHIRE_PICKAXE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
