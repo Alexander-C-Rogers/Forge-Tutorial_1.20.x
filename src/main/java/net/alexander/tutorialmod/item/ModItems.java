@@ -4,6 +4,7 @@ import net.alexander.tutorialmod.TutorialMod;
 import net.alexander.tutorialmod.item.custom.FuelItem;
 import net.alexander.tutorialmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -32,6 +33,11 @@ public class ModItems {
     /*Mod Custom 3D Model Item*/
     public static final RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff",
             () -> new Item(new Item.Properties().stacksTo(1)));
+
+    /*Mod Custom Tools*/
+    public static final RegistryObject<Item> SAPPHIRE_SWORD = ITEMS.register("sapphire_sword",
+            () -> new SwordItem(ModToolTiers.SAPPHIRE, 4, 2,
+                    new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
