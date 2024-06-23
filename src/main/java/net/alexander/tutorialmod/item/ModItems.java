@@ -3,6 +3,7 @@ package net.alexander.tutorialmod.item;
 import net.alexander.tutorialmod.TutorialMod;
 import net.alexander.tutorialmod.item.custom.FuelItem;
 import net.alexander.tutorialmod.item.custom.MetalDetectorItem;
+import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.SwordItem;
@@ -41,6 +42,9 @@ public class ModItems {
                     new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_PICKAXE = ITEMS.register("sapphire_pickaxe",
             () -> new PickaxeItem(ModToolTiers.SAPPHIRE, 1, 1,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> SAPPHIRE_AXE = ITEMS.register("sapphire_axe",
+            () -> new AxeItem(ModToolTiers.SAPPHIRE, 7, 1,
                     new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
