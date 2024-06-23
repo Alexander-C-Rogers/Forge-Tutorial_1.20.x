@@ -45,6 +45,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.SAPPHIRE_SLAB);
         evenSimplerBlockItem(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
         buttonItem(ModBlocks.SAPPHIRE_BUTTON, ModBlocks.SAPPHIRE_BLOCK);
+
+        /*Mod Custom Tools*/
+        handheldItem(ModItems.SAPPHIRE_SWORD);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
