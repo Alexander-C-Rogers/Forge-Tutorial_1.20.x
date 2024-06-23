@@ -32,6 +32,9 @@ public class ModCreativeModTabs {
                         /*Mod Custom 3D Model Item*/
                         pOutput.accept(ModItems.SAPPHIRE_STAFF.get());
 
+                        /*Mod Custom Tools*/
+                        pOutput.accept(ModItems.SAPPHIRE_SWORD.get());
+
                         /*Mod Blocks*/
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
