@@ -34,6 +34,7 @@ public class ModCreativeModTabs {
 
                         /*Mod Custom Tools*/
                         pOutput.accept(ModItems.SAPPHIRE_SWORD.get());
+                        pOutput.accept(ModItems.SAPPHIRE_PICKAXE.get());
 
                         /*Mod Blocks*/
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
