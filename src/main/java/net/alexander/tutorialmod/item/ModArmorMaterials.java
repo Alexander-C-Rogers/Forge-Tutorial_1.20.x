@@ -1,5 +1,6 @@
 package net.alexander.tutorialmod.item;
 
+import net.alexander.tutorialmod.TutorialMod;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
@@ -60,7 +61,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return null;
+        return TutorialMod.MOD_ID + ":" + this.name;
     }
 
     @Override
