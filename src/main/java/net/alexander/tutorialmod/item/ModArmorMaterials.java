@@ -66,7 +66,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 0;
+        return this.toughness;
     }
 
     @Override
