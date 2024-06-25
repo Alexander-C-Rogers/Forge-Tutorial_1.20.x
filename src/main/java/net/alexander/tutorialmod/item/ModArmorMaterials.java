@@ -14,6 +14,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final int enchantmentValue;
     private final SoundEvent equipSound;
     private final float toughness;
+    private final float knockbackResistance;
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
