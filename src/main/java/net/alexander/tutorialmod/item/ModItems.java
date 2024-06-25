@@ -50,6 +50,10 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0,
                     new Item.Properties()));
 
+    /*Mod Custom Armor*/
+    public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet",
+            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
