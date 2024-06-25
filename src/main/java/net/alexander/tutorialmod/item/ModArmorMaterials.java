@@ -19,6 +19,8 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final float knockbackResistance;
     private final Supplier<Ingredient> repairIngredient;
 
+    private static final int[] BASE_DURABILITY = { 11, 16, 16, 13 };
+
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
         return 0;
