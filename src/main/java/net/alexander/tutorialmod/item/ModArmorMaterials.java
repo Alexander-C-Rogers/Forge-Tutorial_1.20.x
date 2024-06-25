@@ -8,6 +8,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 public enum ModArmorMaterials implements ArmorMaterial {
     ;
 
+    private final String name;
+
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
         return 0;
