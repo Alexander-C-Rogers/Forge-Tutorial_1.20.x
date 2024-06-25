@@ -45,12 +45,12 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     @Override
     public int getEnchantmentValue() {
-        return enchantmentValue;
+        return this.enchantmentValue;
     }
 
     @Override
     public SoundEvent getEquipSound() {
-        return null;
+        return this.equipSound;
     }
 
     @Override
