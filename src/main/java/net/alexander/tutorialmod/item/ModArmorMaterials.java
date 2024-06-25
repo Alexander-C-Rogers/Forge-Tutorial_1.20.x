@@ -45,7 +45,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     @Override
     public int getEnchantmentValue() {
-        return 0;
+        return enchantmentValue;
     }
 
     @Override
