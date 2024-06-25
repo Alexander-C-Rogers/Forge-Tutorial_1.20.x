@@ -40,7 +40,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     @Override
     public int getDefenseForType(ArmorItem.Type pType) {
-        return 0;
+        return this.protectionAmounts[pType.ordinal()];
     }
 
     @Override
