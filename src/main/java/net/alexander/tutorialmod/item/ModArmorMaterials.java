@@ -9,6 +9,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     ;
 
     private final String name;
+    private final int durabilityMultiplier;
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
