@@ -5,6 +5,8 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 
+import java.util.function.Supplier;
+
 public enum ModArmorMaterials implements ArmorMaterial {
     ;
 
@@ -15,6 +17,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final SoundEvent equipSound;
     private final float toughness;
     private final float knockbackResistance;
+    private final Supplier<Ingredient> repairIngredient;
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
