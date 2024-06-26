@@ -73,6 +73,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.SAPPHIRE_AXE);
         handheldItem(ModItems.SAPPHIRE_SHOVEL);
         handheldItem(ModItems.SAPPHIRE_HOE);
+
+        /*Mod Custom Armor*/
+        trimmedArmorItem(ModItems.SAPPHIRE_HELMET);
+        trimmedArmorItem(ModItems.SAPPHIRE_CHESTPLATE);
+        trimmedArmorItem(ModItems.SAPPHIRE_LEGGINGS);
+        trimmedArmorItem(ModItems.SAPPHIRE_BOOTS);
     }
 
     /* Shoutout to El_Redstoniano for making this*/
