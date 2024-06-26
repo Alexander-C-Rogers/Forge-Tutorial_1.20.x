@@ -50,4 +50,14 @@ public class ModArmorItem extends ArmorItem {
             player.addEffect(new MobEffectInstance(mapStatusEffect));
         }
     }
+
+    private boolean hasFullSuitOfArmorOn(Player player) {
+        ItemStack boots = player.getInventory().getArmor(0);
+        ItemStack leggings = player.getInventory().getArmor(1);
+        ItemStack breastplate = player.getInventory().getArmor(2);
+        ItemStack helmet = player.getInventory().getArmor(3);
+
+        return !helmet.isEmpty() && !breastplate.isEmpty()
+                && !leggings.isEmpty() && !boots.isEmpty();
+    }
 }
