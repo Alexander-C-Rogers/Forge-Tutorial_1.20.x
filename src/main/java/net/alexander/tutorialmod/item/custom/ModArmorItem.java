@@ -41,4 +41,13 @@ public class ModArmorItem extends ArmorItem {
             }
         }
     }
+
+    private void addStatusEffectForMaterial(Player player, ArmorMaterial mapArmorMaterial,
+                                            MobEffectInstance mapStatusEffect) {
+        boolean hasPlayerEffect = player.hasEffect(mapStatusEffect.getEffect());
+
+        if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
+            player.addEffect(new MobEffectInstance(mapStatusEffect));
+        }
+    }
 }
