@@ -30,4 +30,15 @@ public class ModArmorItem extends ArmorItem {
             }
         }
     }
+
+    private void evaluateArmorEffects(Player player) {
+        for (Map.Entry<ArmorMaterial, MobEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
+            ArmorMaterial mapArmorMaterial = entry.getKey();
+            MobEffectInstance mapStatusEffect = entry.getValue();
+
+            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+            }
+        }
+    }
 }
